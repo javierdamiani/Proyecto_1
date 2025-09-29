@@ -12,11 +12,11 @@ Portfolio profesional desarrollado como proyecto para Coderhouse, implementando 
 - **Bootstrap 5.3.2** para componentes y sistema de grillas
 - **Estructura limpia** con comentarios organizados y jerarquía clara
 
-### Estilos CSS
-- **Variables CSS personalizadas** para colores, espaciado y tipografía
-- **Override de Bootstrap** con estilos personalizados
-- **Responsive design** con media queries optimizadas
-- **Propiedades avanzadas** como backdrop-filter, gradients y transiciones
+### Estilos y SASS
+- **SASS** para todo el proyecto con anidación, `@extend`, `@mixin` y variables
+- **Variables CSS y SASS** para colores, espaciado y tipografía
+- **Responsive design** con mixin `respond()` y media queries
+- **Gradientes** lineales y radiales, transiciones y transformaciones
 - **Accesibilidad** con soporte para `prefers-reduced-motion`
 
 ### Componentes Implementados
@@ -27,7 +27,7 @@ Portfolio profesional desarrollado como proyecto para Coderhouse, implementando 
 - **Footer** con enlaces sociales
 
 ### Librerías Utilizadas
-- **Bootstrap 5.3.2** (CSS + JS)
+- **Bootstrap 5.3.2** (solo CSS)
 - **Font Awesome 6.4.0** para iconos
 - **Google Fonts** (Inter)
 
@@ -38,7 +38,16 @@ Proyecto_1/
 │   └── img/
 │       └── javier_damiani.png
 ├── css/
-│   └── main.css
+│   ├── style.css
+│   └── style.css.map
+├── scss/
+│   ├── _variables.scss
+│   ├── _mixins.scss
+│   ├── _placeholders.scss
+│   ├── _base.scss
+│   ├── _animations.scss
+│   ├── _components.scss
+│   └── main.scss
 ├── index.html
 ├── wireframe_desktop.jpg
 ├── wireframe_mobile.jpg
@@ -78,8 +87,9 @@ Proyecto_1/
 
 ## Instalación y Uso
 1. Clonar o descargar el repositorio
-2. Abrir `index.html` en un navegador web
-3. No requiere servidor local (funciona con file://)
+2. Recompilar SASS (opcional): `npx sass scss/main.scss css/style.css --source-map`
+3. Abrir `index.html` en un navegador web
+4. No usa JavaScript; menú responsive con CSS puro
 
 ## Compatibilidad
 - ✅ Chrome 90+
