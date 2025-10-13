@@ -1,0 +1,28 @@
+{
+  "name": "Javier Damiani - Portfolio",
+  "short_name": "Javier Damiani",
+  "description": "Portfolio profesional de Javier Damiani: Desarrollador Frontend y Fullstack especializado en React, JavaScript, HTML5, CSS3, TypeScript y Astro.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#16a34a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/img/javier_damiani.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/javier_damiani.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "web"],
+  "lang": "es",
+  "scope": "/",
+  "id": "javier-damiani-portfolio"
+}

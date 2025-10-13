@@ -3,10 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Javier Damiani A. — Portfolio</title>
-  <meta name="description" content="Portfolio de Javier Damiani: Frontend / Fullstack Web Developer. React, JS, HTML, CSS, Tailwind, Astro.">
+  <title>Javier Damiani A. — Portfolio | Frontend & Fullstack Developer</title>
+  <meta name="description" content="Portfolio profesional de Javier Damiani: Desarrollador Frontend y Fullstack especializado en React, JavaScript, HTML5, CSS3, TypeScript y Astro. Experiencia en desarrollo web moderno y responsive.">
+  <meta name="keywords" content="desarrollador web, frontend developer, fullstack developer, React, JavaScript, HTML5, CSS3, TypeScript, Astro, portfolio, Javier Damiani">
+  <meta name="author" content="Javier Damiani Arellano">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://javierdamiani.com">
   
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://javierdamiani.com">
+  <meta property="og:title" content="Javier Damiani A. — Portfolio | Frontend & Fullstack Developer">
+  <meta property="og:description" content="Portfolio profesional de Javier Damiani: Desarrollador Frontend y Fullstack especializado en React, JavaScript, HTML5, CSS3, TypeScript y Astro.">
+  <meta property="og:image" content="https://javierdamiani.com/assets/img/javier_damiani.webp">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Javier Damiani Portfolio">
   
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://javierdamiani.com">
+  <meta property="twitter:title" content="Javier Damiani A. — Portfolio | Frontend & Fullstack Developer">
+  <meta property="twitter:description" content="Portfolio profesional de Javier Damiani: Desarrollador Frontend y Fullstack especializado en React, JavaScript, HTML5, CSS3, TypeScript y Astro.">
+  <meta property="twitter:image" content="https://javierdamiani.com/assets/img/javier_damiani.webp">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/img/javier_damiani.webp">
+  <link rel="icon" type="image/webp" sizes="16x16" href="assets/img/javier_damiani.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/javier_damiani.webp">
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Performance hints -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Javier Damiani Arellano",
+    "jobTitle": "Frontend / Fullstack Web Developer",
+    "description": "Desarrollador Frontend y Fullstack especializado en React, JavaScript, HTML5, CSS3, TypeScript y Astro",
+    "url": "https://javierdamiani.com",
+    "image": "https://javierdamiani.com/assets/img/javier_damiani.webp",
+    "email": "javierdamiani74@gmail.com",
+    "telephone": "+51963925677",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PE"
+    },
+    "sameAs": [
+      "https://github.com/javierdamiani",
+      "https://www.linkedin.com/in/javierluisdamianiarellano/",
+      "https://javierdamiani.com"
+    ],
+    "knowsAbout": [
+      "React.js",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "Node.js",
+      "MongoDB",
+      "PostgreSQL",
+      "TailwindCSS",
+      "Astro"
+    ],
+    "alumniOf": [
+      {
+        "@type": "Organization",
+        "name": "Universidad San Martín de Porres",
+        "description": "Maestría en e-Business"
+      },
+      {
+        "@type": "Organization", 
+        "name": "Universidad Santo Toribio de Mogrovejo",
+        "description": "Licenciatura en Administración de Empresas"
+      }
+    ],
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "BetSell",
+        "jobTitle": "Desarrollador Web Frontend"
+      },
+      {
+        "@type": "Organization",
+        "name": "Universidad Continental",
+        "jobTitle": "Desarrollador Web"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   
   
@@ -19,102 +116,113 @@
   
   
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Scroll suave solo con CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
   
   <a class="skip-link" href="#main">Saltar al contenido</a>
   
   
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header class="site-header" role="banner">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation" aria-label="Navegación principal">
       <div class="container">
         
-        <a class="navbar-brand brand" href="#">
+        <a class="navbar-brand brand" href="#" aria-label="Javier Damiani - Inicio">
           Javier<span>Damiani</span>
         </a>
         
-        
-        
+        <!-- Botón toggle para móvil -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">☰</label>
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Alternar navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
         
-        <ul class="navbar-nav ms-auto nav-menu">
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre-mi">Sobre mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#habilidades">Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experiencia">Experiencia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#educacion">Educación</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-        </ul>
+        <!-- Menú de navegación -->
+        <ul class="navbar-nav ms-auto nav-menu" role="menubar">
+              <li class="nav-item" role="none">
+                <a class="nav-link" href="#sobre-mi" role="menuitem" aria-label="Ir a la sección sobre mí">Sobre mí</a>
+              </li>
+              <li class="nav-item" role="none">
+                <a class="nav-link" href="#habilidades" role="menuitem" aria-label="Ir a la sección de habilidades">Habilidades</a>
+              </li>
+              <li class="nav-item" role="none">
+                <a class="nav-link" href="#experiencia" role="menuitem" aria-label="Ir a la sección de experiencia">Experiencia</a>
+              </li>
+              <li class="nav-item" role="none">
+                <a class="nav-link" href="#proyectos" role="menuitem" aria-label="Ir a la sección de proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item" role="none">
+                <a class="nav-link" href="#educacion" role="menuitem" aria-label="Ir a la sección de educación">Educación</a>
+              </li>
+              <li class="nav-item" role="none">
+                <a class="nav-link" href="#contacto" role="menuitem" aria-label="Ir a la sección de contacto">Contacto</a>
+              </li>
+          </ul>
       </div>
     </nav>
   </header>
 
   <main id="main">
     
-    <section class="hero py-5" aria-labelledby="h1">
+    <section class="hero py-5" aria-labelledby="h1" role="banner">
       <div class="container">
         <div class="row align-items-center">
           
           <div class="col-lg-8 col-md-7">
             <div class="hero-content">
-              <h1 id="h1" class="display-4 fw-bold mb-4">Frontend / Fullstack Web Developer</h1>
+              <h1 id="h1" class="display-4 fw-bold mb-4 typewriter-effect">Frontend / Fullstack Web Developer</h1>
               <p class="lead mb-4">Construyo interfaces rápidas, accesibles y escalables con React, JavaScript, HTML, CSS y Astro.</p>
               
               
-              <div class="d-flex gap-3 mb-4">
-                <a class="btn btn-primary btn-lg" href="#proyectos">Ver proyectos</a>
-                <a class="btn btn-outline-primary btn-lg" href="#contacto">Contáctame</a>
+              <div class="d-flex gap-3 mb-4" role="group" aria-label="Acciones principales">
+                <a class="btn btn-primary btn-lg" href="#proyectos" role="button" aria-label="Ver mis proyectos de desarrollo web">Ver proyectos</a>
+                <a class="btn btn-outline-primary btn-lg" href="#contacto" role="button" aria-label="Contactarme para oportunidades de trabajo">Contáctame</a>
               </div>
               
               
-              <div class="contact-links">
-                <a href="https://javierdamiani.com" target="_blank" rel="noopener" class="me-3">javierdamiani.com</a>
-                <a href="mailto:javierdamiani74@gmail.com" class="me-3">javierdamiani74@gmail.com</a>
-                <a href="https://github.com/javierdamiani" target="_blank" rel="noopener" class="me-3">GitHub</a>
-                <a href="https://www.linkedin.com/in/javierluisdamianiarellano/" target="_blank" rel="noopener" class="me-3">LinkedIn</a>
-                <a href="tel:+51963925677">+51 963 925 677</a>
+              <div class="contact-links" role="complementary" aria-label="Información de contacto">
+                <a href="https://javierdamiani.com" target="_blank" rel="noopener noreferrer" class="me-3" aria-label="Visitar mi sitio web personal">javierdamiani.com</a>
+                <a href="mailto:javierdamiani74@gmail.com" class="me-3" aria-label="Enviar correo electrónico a javierdamiani74@gmail.com">javierdamiani74@gmail.com</a>
+                <a href="https://github.com/javierdamiani" target="_blank" rel="noopener noreferrer" class="me-3" aria-label="Ver mi perfil de GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/javierluisdamianiarellano/" target="_blank" rel="noopener noreferrer" class="me-3" aria-label="Ver mi perfil de LinkedIn">LinkedIn</a>
+                <a href="tel:+51963925677" aria-label="Llamar al número +51 963 925 677">+51 963 925 677</a>
               </div>
             </div>
           </div>
           
           
           <div class="col-lg-4 col-md-5">
-            <div class="hero-card card h-100 animate-float">
+            <aside class="hero-card card h-100 animate-float" role="complementary" aria-labelledby="profile-title">
               <div class="card-body">
-                <h2 class="card-title h4">Perfil</h2>
+                <h2 id="profile-title" class="card-title h4">Perfil</h2>
                 <p class="card-text">Especializado en frontend con React.js, JavaScript ES6+, HTML5, CSS3 y TypeScript. Experiencia en integración de APIs, rendimiento y responsive design. Base sólida en administración y e‑Business.</p>
               </div>
-            </div>
+            </aside>
           </div>
         </div>
       </div>
     </section>
 
     
-    <section id="sobre-mi" class="py-5">
+    <section id="sobre-mi" class="py-5" aria-labelledby="sobre-mi-title">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <h2 class="h1 mb-4">Sobre mí</h2>
+            <h2 id="sobre-mi-title" class="h1 mb-4">Sobre mí</h2>
             <p class="lead mb-4">Desarrollador orientado a producto con enfoque en DX, performance y accesibilidad. Trabajo en entornos ágiles y disfruto colaborar con equipos multidisciplinarios para llevar ideas a producción.</p>
             <p>Mi pasión por la tecnología y el desarrollo web me ha llevado a especializarme en crear experiencias digitales excepcionales que combinan funcionalidad, estética y rendimiento.</p>
           </div>
           <div class="col-lg-6">
             <div class="text-center">
-              <img src="assets/img/javier_damiani.png" alt="Javier Damiani - Desarrollador Web Frontend y Fullstack" class="img-fluid rounded-circle shadow" style="max-width: 300px;">
+              <img src="assets/img/javier_damiani.webp" alt="Javier Damiani - Desarrollador Web Frontend y Fullstack especializado en React, JavaScript, HTML5, CSS3 y TypeScript" class="img-fluid rounded-circle shadow animate-slide-right" style="max-width: 300px;" loading="lazy" width="300" height="300">
             </div>
           </div>
         </div>
@@ -122,27 +230,27 @@
     </section>
 
     
-    <section id="habilidades" class="py-5 bg-light">
+    <section id="habilidades" class="py-5 bg-light" aria-labelledby="habilidades-title">
       <div class="container">
-        <h2 class="text-center mb-5">Habilidades</h2>
+        <h2 id="habilidades-title" class="text-center mb-5">Habilidades</h2>
         <div class="row g-4">
           
           <div class="col-lg-3 col-md-6">
-            <div class="card h-100 text-center">
+            <article class="card h-100 text-center animate-slide-up animate-delay-1">
               <div class="card-body">
                 <h3 class="card-title h5 mb-3">Frontend</h3>
-                <div class="skills-tags">
-                  <span class="badge bg-primary me-1 mb-1">HTML5</span>
-                  <span class="badge bg-primary me-1 mb-1">CSS3</span>
-                  <span class="badge bg-primary me-1 mb-1">JavaScript ES6+</span>
-                  <span class="badge bg-primary me-1 mb-1">TypeScript</span>
-                  <span class="badge bg-primary me-1 mb-1">React.js</span>
-                  <span class="badge bg-primary me-1 mb-1">Next.js</span>
-                  <span class="badge bg-primary me-1 mb-1">TailwindCSS</span>
-                  <span class="badge bg-primary me-1 mb-1">Astro</span>
+                <div class="skills-tags" role="list" aria-label="Tecnologías frontend">
+                  <span class="badge bg-primary me-1 mb-1" role="listitem">HTML5</span>
+                  <span class="badge bg-primary me-1 mb-1" role="listitem">CSS3</span>
+                  <span class="badge bg-primary me-1 mb-1" role="listitem">JavaScript ES6+</span>
+                  <span class="badge bg-primary me-1 mb-1" role="listitem">TypeScript</span>
+                  <span class="badge bg-primary me-1 mb-1" role="listitem">React.js</span>
+                  <span class="badge bg-primary me-1 mb-1" role="listitem">Next.js</span>
+                  <span class="badge bg-primary me-1 mb-1" role="listitem">TailwindCSS</span>
+                  <span class="badge bg-primary me-1 mb-1" role="listitem">Astro</span>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
           
           
@@ -427,30 +535,69 @@
               
               
               <div class="col-md-6">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title h5 mb-4">Envíame un mensaje</h3>
-                    <form class="contact-form">
-                      <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="asunto" class="form-label">Asunto</label>
-                        <input type="text" class="form-control" id="asunto" required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
-                    </form>
+                  <div class="card h-100 card-interactive">
+                    <div class="card-body">
+                      <h3 class="card-title h5 mb-4">Envíame un mensaje</h3>
+                      <form class="contact-form" action="mailto:javierdamiani74@gmail.com" method="post" enctype="text/plain" aria-label="Formulario de contacto">
+                        <div class="mb-3">
+                          <label for="nombre" class="form-label">Nombre completo *</label>
+                          <input 
+                            type="text" 
+                            class="form-control" 
+                            id="nombre" 
+                            name="nombre"
+                            required 
+                            minlength="2"
+                            maxlength="50"
+                            aria-describedby="nombre-help"
+                            autocomplete="name">
+                          <div id="nombre-help" class="form-text">Mínimo 2 caracteres, máximo 50 caracteres</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Correo electrónico *</label>
+                          <input 
+                            type="email" 
+                            class="form-control" 
+                            id="email" 
+                            name="email"
+                            required 
+                            aria-describedby="email-help"
+                            autocomplete="email">
+                          <div id="email-help" class="form-text">Ingresa un correo electrónico válido</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="asunto" class="form-label">Asunto *</label>
+                          <input 
+                            type="text" 
+                            class="form-control" 
+                            id="asunto" 
+                            name="asunto"
+                            required 
+                            minlength="5"
+                            maxlength="100"
+                            aria-describedby="asunto-help">
+                          <div id="asunto-help" class="form-text">Describe brevemente el motivo de tu mensaje</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="mensaje" class="form-label">Mensaje *</label>
+                          <textarea 
+                            class="form-control" 
+                            id="mensaje" 
+                            name="mensaje"
+                            rows="4" 
+                            required 
+                            minlength="10"
+                            maxlength="500"
+                            aria-describedby="mensaje-help"></textarea>
+                          <div id="mensaje-help" class="form-text">Mínimo 10 caracteres, máximo 500 caracteres</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" aria-describedby="submit-help">
+                          Enviar mensaje
+                        </button>
+                        <div id="submit-help" class="form-text mt-2">Los campos marcados con * son obligatorios</div>
+                      </form>
+                    </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -483,7 +630,10 @@
     </div>
   </footer>
 
-  
-  
+  <!-- Botón volver arriba solo con CSS -->
+  <a href="#" class="back-to-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
 </body>
 </html>

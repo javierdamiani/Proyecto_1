@@ -1,13 +1,237 @@
+@use 'variables' as *;
+
+// Animación de flotación
 @keyframes float {
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-6px); }
   100% { transform: translateY(0); }
 }
 
+// Animación de deslizamiento desde abajo
+@keyframes slideUp {
+  0%   { 
+    opacity: 0;
+    transform: translateY(30px); 
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+// Animación de deslizamiento desde la izquierda
+@keyframes slideLeft {
+  0%   { 
+    opacity: 0;
+    transform: translateX(-30px); 
+  }
+  100% { 
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+// Animación de deslizamiento desde la derecha
+@keyframes slideRight {
+  0%   { 
+    opacity: 0;
+    transform: translateX(30px); 
+  }
+  100% { 
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+// Animación de rotación
+@keyframes rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+// Animación de pulso
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+// Animación de rebote
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+// Animación de fade in
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+// Animación de escritura (typewriter)
+@keyframes typewriter {
+  0%   { width: 0; }
+  100% { width: 100%; }
+}
+
+// Clases de animación
 .animate-float {
   animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+
+.animate-slide-up {
+  animation-name: slideUp;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.animate-slide-left {
+  animation-name: slideLeft;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.animate-slide-right {
+  animation-name: slideRight;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.animate-rotate {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.animate-pulse {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.animate-bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.animate-fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+// Delays para animaciones escalonadas
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+.animate-delay-4 { animation-delay: 0.4s; }
+.animate-delay-5 { animation-delay: 0.5s; }
+
+// Animaciones automáticas al cargar la página
+@keyframes pageLoad {
+  0% { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% { 
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% { 
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% { 
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Aplicar animaciones automáticas
+.hero-content {
+  animation: slideInFromLeft 1s ease-out 0.5s both;
+}
+
+.hero-card {
+  animation: slideInFromRight 1s ease-out 0.7s both;
+}
+
+.card {
+  animation: pageLoad 0.8s ease-out both;
+  
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0.2s; }
+  &:nth-child(3) { animation-delay: 0.3s; }
+  &:nth-child(4) { animation-delay: 0.4s; }
+}
+
+section {
+  animation: pageLoad 1s ease-out both;
+  
+  &:nth-of-type(1) { animation-delay: 0.2s; }
+  &:nth-of-type(2) { animation-delay: 0.4s; }
+  &:nth-of-type(3) { animation-delay: 0.6s; }
+  &:nth-of-type(4) { animation-delay: 0.8s; }
+  &:nth-of-type(5) { animation-delay: 1s; }
+  &:nth-of-type(6) { animation-delay: 1.2s; }
+  &:nth-of-type(7) { animation-delay: 1.4s; }
+}
+
+// Efecto de escritura con CSS
+@keyframes typewriter {
+  0% { 
+    width: 0;
+    border-right: 2px solid var(--primary-color);
+  }
+  50% { 
+    border-right: 2px solid var(--primary-color);
+  }
+  100% { 
+    width: 100%;
+    border-right: none;
+  }
+}
+
+.typewriter-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--primary-color);
+  animation: typewriter 3s steps(40, end) 0.5s both;
 }
 
